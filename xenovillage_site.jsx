@@ -158,12 +158,3 @@ export async function handler(req: NextApiRequest, res: NextApiResponse) {
     return res.status(500).json({ error: "Failed to send message" });
   }
 }
-
-/*
-  ⚠️ Setup instructions:
-  - Run: npm install nodemailer
-  - In .env.local, set:
-      GMAIL_USER=nathimthunzini@gmail.com
-      GMAIL_PASS=your_app_password (from Google App Passwords)
-  - Deploy to Vercel with environment variables configured.
-*/
