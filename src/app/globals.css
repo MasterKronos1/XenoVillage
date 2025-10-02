@@ -19,3 +19,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Futuristic Neon Glow Effect */
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px theme('colors.teal.400'),
+                0 0 10px theme('colors.teal.400');
+  }
+  50% {
+    box-shadow: 0 0 10px theme('colors.teal.300'),
+                0 0 20px theme('colors.teal.300');
+  }
+}
+
+/* Utility Class to use the animation */
+.neon-border {
+  border-color: theme('colors.teal.500');
+  animation: neon-pulse 2s infinite alternate;
+}
